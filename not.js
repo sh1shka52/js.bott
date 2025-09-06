@@ -6,7 +6,7 @@ const path = require('path');
 
 //cliente do WhatsApp com autenticação local
 const client = new Client({
-    authStrategy: new LocalAuth(),
+    authStrategy: new LocalAuth({clientId: "bot1"}),
     puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
 });
 
