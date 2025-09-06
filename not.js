@@ -7,7 +7,7 @@ const path = require('path');
 //cliente do WhatsApp com autenticação local
 const client = new Client({
     authStrategy: new LocalAuth(),
-    puppeteer: { args: ['--no-sandbox'] }
+    puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
 });
 
 // qrcode para autenticação
