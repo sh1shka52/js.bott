@@ -15,7 +15,7 @@ const client = new Client({
                        '--no-zygote',
                        '--disable-gpu',
                        '--single-process'],
-               executablePath: '/usr/bin/chromium-browser'}
+               executablePath: '/usr/bin/google-chrome'}
 });
 
 // qrcode para autenticação
